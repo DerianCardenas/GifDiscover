@@ -1,0 +1,75 @@
+body{
+  background-color: black;
+  font-size: 18px;
+  font-family: 'Vollkorn', serif;
+  color: white;
+}
+.menu-container{
+  background: #581845;
+  display: block;
+  height: auto;
+}
+.menu-container .logo{
+  color: #fff;
+  font-size: 30px;
+  font-weight: 400;
+  letter-spacing: -1px;
+}
+.menu-container .menu{
+  align-items: flex-start;
+  display: inline-flex;
+  height: auto;
+  width: auto;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+.menu-container .menu .menu-items{
+  align-items: flex-start;
+  margin-left: 10%;
+  width: auto;
+  height: auto;
+}
+.menu-container .menu .menu-items a{
+  text-decoration: none;
+  color: #fff;
+  display: block;
+  font-size: 18px;
+  padding:10px 12px;
+}
+.menu-container .menu .menu-items a:hover{
+  text-decoration: none;
+  color: #581845;
+  background-color: white;
+  display: block;
+}
+.menu-container .menu input[type=text] {
+  float: right;
+  padding: 6px;
+  border: none;
+  margin-top: 8px;
+  margin-left: 10%;
+  font-size: 17px;
+}
+.menu-container .menu input[type=button] {
+  float: right;
+  padding: 6px;
+  border: none;
+  margin-top: 8px;
+  margin-left: 2%;
+  font-size: 17px;
+}
+.gif{
+  opacity: inherit;
+  height: auto;
+  width: auto;
+  margin: 5%;
+  position: relative;
+  align-items: flex-start;
+}
+video{
+  border-radius: 15px;
+  margin: 2px;
+  background: #900c3f;
+}
