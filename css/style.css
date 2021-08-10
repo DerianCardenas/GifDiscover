@@ -1,64 +1,79 @@
+*{
+  box-sizing: border-box;
+}
 body{
   background-color: black;
   font-size: 18px;
   font-family: 'Vollkorn', serif;
   color: white;
+  margin: 0;
+  padding: 0;
+}
+.title{
+  font-size: 1.5rem;
+  margin: .5rem;
 }
 .menu-container{
   background: #581845;
-  display: block;
-  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
 }
-.menu-container .logo{
-  color: #fff;
-  font-size: 30px;
-  font-weight: 400;
-  letter-spacing: -1px;
-}
-.menu-container .menu{
-  align-items: flex-start;
-  display: inline-flex;
-  height: auto;
-  width: auto;
-  list-style-type: none;
+.menu-items ul{
   margin: 0;
   padding: 0;
-  position: relative;
+  display: flex;
 }
-.menu-container .menu .menu-items{
-  align-items: flex-start;
-  margin-left: 10%;
-  width: auto;
-  height: auto;
+.menu-items li {
+  list-style: none;
 }
-.menu-container .menu .menu-items a{
+.menu-items li a{
   text-decoration: none;
-  color: #fff;
-  display: block;
-  font-size: 18px;
-  padding:10px 12px;
-}
-.menu-container .menu .menu-items a:hover{
-  text-decoration: none;
-  color: #581845;
-  background-color: white;
+  color: white;
+  padding: 1rem;
   display: block;
 }
-.menu-container .menu input[type=text] {
-  float: right;
-  padding: 6px;
-  border: none;
-  margin-top: 8px;
-  margin-left: 10%;
-  font-size: 17px;
+.menu-items li a:hover{
+  padding: 1rem;
+  display: block;
+  color: #900c3f;
+  background-color: wheat;
 }
-.menu-container .menu input[type=button] {
+.toggle-button {
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+.menu-items ul .searchbar{
+  margin: auto;
+  padding: 0;
+  display: flex;
+}
+.searchbar input[type=text] {
+  float: left;
+  padding: 6px;
+  border-radius: 10px;
+  font-size: 17px;
+  border-right: 2%;
+}
+.searchbar input[type=button] {
   float: right;
   padding: 6px;
-  border: none;
-  margin-top: 8px;
-  margin-left: 2%;
+  border-radius: 10px;
   font-size: 17px;
+  border-right: 5%;
 }
 .gif{
   opacity: inherit;
@@ -72,4 +87,30 @@ video{
   border-radius: 15px;
   margin: 2px;
   background: #900c3f;
+}
+@media (max-width:920px) {
+  .menu-container {
+    flex-direction: column;
+    align-items: flex-start;
+}
+.toggle-button {
+    display: flex;
+}
+.menu-items {
+    display: none;
+    width: 100%;
+}
+.menu-items ul {
+    width: 100%;
+    flex-direction: column;
+}
+.menu-items ul li {
+    text-align: center;
+}
+.menu-items ul li a {
+    padding: .5rem 1rem;
+}
+.menu-items.active {
+    display: flex;
+}
 }
