@@ -1,8 +1,9 @@
 document.getElementById('search').onclick = () =>{
 var busq = document.getElementById('searchbar').value;
 document.getElementById('cont').innerHTML="";
+document.getElementById('searchbar').value="";
 console.log(busq);
-var url = "https://api.giphy.com/v1/gifs/search?api_key=hgIaMbQMcikORBCiFhUw5LKUMIiWjOat&q="+busq+"&limit=30";
+var url = "https://api.giphy.com/v1/gifs/search?api_key=hgIaMbQMcikORBCiFhUw5LKUMIiWjOat&q="+busq+"&limit=8";
 fetch(url)
         .then(response => response.json())
         .then(data => mostrarData(data))
