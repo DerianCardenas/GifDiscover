@@ -4,26 +4,35 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Gif Discover</title>
-  <link href="https://fonts.googleapis.com/css2?family=Vollkorn&display=swap" rel="stylesheet">
   <link rel ="stylesheet" href="css/style.css" type="text/css">
+  <script src="js/script.js" defer></script>
 </head>
 <body>
   <nav class="menu-container">
-    <div class="menu-content">
-      <span class="logo">Gif Discover</span>
-      <ul class="menu">
-        <li class="menu-items"> <a href="index.html">Inicio</a></li>
-        <li class="menu-items"> <a href="random.html">Random</a></li>
-        <li class="menu-items"> <a href="trending.html">Trending</a></li>
-        <input type="text" id="searchbar" placeholder="Gif a buscar..">
-        <input type="button" id="search" value="Buscar">
+    <div class="title">Gif Discover</div>
+    <a href="#" class="toggle-button">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </a>
+    <div class="menu-items">
+      <ul>
+        <li> <a href="index.html">Inicio</a></li>
+        <li> <a href="random.html">Random</a></li>
+        <li> <a href="trending.html">Trending</a></li>
+        <div class="searchbar">  
+          <input type="text" id="searchbar" placeholder="Gif a buscar..">
+          <input type="button" id="search" value="Buscar">
+        </div>
       </ul>
     </div>
+    
   </nav>  
   <div id="cont" class="gif">
-    
+  
   </div>
 </body>
 <script src="js/princ.js"></script>
 <script src="js/conn.js"></script>
+
 </html>
