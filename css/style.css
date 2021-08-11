@@ -16,6 +16,9 @@ body{
 .menu-container{
   background: #581845;
   display: flex;
+  position: relative;
+  width: 90%;
+  margin-left: 5%;
   align-items: center;
   justify-content: space-between;
   color: white;
@@ -56,19 +59,19 @@ body{
     background-color: white;
     border-radius: 10px;
 }
-.menu-items ul .searchbar{
+.menu-items ul .searchnav{
   margin: auto;
   padding: 0;
   display: flex;
 }
-.searchbar input[type=text] {
+.searchnav input[type=text] {
   float: left;
   padding: 6px;
   border-radius: 10px;
   font-size: 17px;
   border-right: 2%;
 }
-.searchbar input[type=button] {
+.searchnav input[type=button] {
   float: right;
   padding: 6px;
   border-radius: 10px;
@@ -90,8 +93,10 @@ video{
 }
 @media (max-width:920px) {
   .menu-container {
+    width: 100%;
     flex-direction: column;
     align-items: flex-start;
+    margin-left: 0;
 }
 .toggle-button {
     display: flex;
@@ -112,5 +117,17 @@ video{
 }
 .menu-items.active {
     display: flex;
+}
+.menu-items .searchnav{
+  margin-bottom: 2%;
+}
+.searchnav input[type=text] {
+  margin-right: 5%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+.searchnav input[type=button] {
+  margin-left: 5%;
+  margin-bottom: 2%;
 }
 }
