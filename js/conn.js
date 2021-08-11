@@ -17,8 +17,8 @@ else{
             console.log(data);
             for(let index = 0; index < data.data.length; index++){
                 let videoUrl = data.data[index].images.original.mp4;
-                let height = data.data[index].images.original_mp4.height-100;
-                let width = data.data[index].images.original_mp4.width-100;
+                let height = data.data[index].images.original_mp4.height;
+                let width = data.data[index].images.original_mp4.width;
                 height=height/2;
                 width=width/2;
                 gif+="<video autoplay='true' loop='true' src='"+videoUrl+" height='"+height+"px width='"+width+"px'></video>"
