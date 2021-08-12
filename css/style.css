@@ -82,13 +82,19 @@ body{
   opacity: inherit;
   height: auto;
   width: auto;
-  margin: 5%;
+  margin-top: 5%;
+  margin-left: 4%;
+  margin-right: 2%;
   position: relative;
-  align-items: flex-start;
+  align-items: center;
+  justify-content: space-between;
+}
+.gifrand{
+  margin: 5% 30%;
 }
 video{
   border-radius: 15px;
-  margin: 2px;
+  margin: 5px;
   background: #900c3f;
 }
 @media (max-width:920px) {
