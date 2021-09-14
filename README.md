@@ -1,0 +1,2 @@
+Primera versión de la renovada GIF-DISCOVER
+GIF-DISCOVER tiene la función de conectarse a la api de GIPHY para poder visualizar los gifs más trending así como poder hacer busqueda de los gifs que el usuario solicite
