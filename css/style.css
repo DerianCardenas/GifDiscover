@@ -2,7 +2,7 @@
   box-sizing: border-box;
 }
 body{
-  background-color: black;
+  background-color: #D4ECDD;
   font-size: 18px;
   font-family: 'Vollkorn', serif;
   color: white;
@@ -14,7 +14,7 @@ body{
   margin: .5rem;
 }
 .menu-container{
-  background: #581845;
+  background: #345B63;
   display: flex;
   position: relative;
   width: 90%;
@@ -40,7 +40,7 @@ body{
 .menu-items li a:hover{
   padding: 1rem;
   display: block;
-  color: #900c3f;
+  color: #152D35;
   background-color: wheat;
 }
 .toggle-button {
@@ -95,7 +95,7 @@ body{
 video{
   border-radius: 15px;
   margin: 5px;
-  background: #900c3f;
+  background: #112031;
 }
 @media (max-width:920px) {
   .menu-container {
