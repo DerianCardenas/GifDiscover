@@ -99,10 +99,8 @@ video{
   max-width: 300px;
   max-height: 300px;
 }
-footer{
-  background-color: #112031;
-}
 .down-p{
+  background-color: #112031;
   align-items: center;
   justify-items: center;
   display: flex;
