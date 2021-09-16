@@ -1,5 +1,8 @@
 *{
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font: oblique 100% cursive;
 }
 body{
   background-color: #D4ECDD;
@@ -11,14 +14,14 @@ body{
 }
 .title{
   font-size: 1.5rem;
-  margin: .5rem;
+  margin-left: 5rem;
 }
 .menu-container{
   background: #345B63;
   display: flex;
   position: relative;
-  width: 90%;
-  margin-left: 5%;
+  width: 100%;
+  height: 60px;
   align-items: center;
   justify-content: space-between;
   color: white;
@@ -36,12 +39,14 @@ body{
   color: white;
   padding: 1rem;
   display: block;
+  transition: all 0.2s linear;
 }
 .menu-items li a:hover{
   padding: 1rem;
   display: block;
   color: #152D35;
   background-color: wheat;
+  border-radius: 10%;
 }
 .toggle-button {
     position: absolute;
@@ -80,22 +85,21 @@ body{
 }
 .gif{
   opacity: inherit;
-  height: auto;
-  width: auto;
-  margin-top: 5%;
-  margin-left: 4%;
-  margin-right: 2%;
-  position: relative;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
+  display: block;
+  margin:  5%;
+  background-color: black;
+  width: 90%;
 }
 .gifrand{
   margin: 5% 30%;
 }
 video{
   border-radius: 15px;
-  margin: 5px;
+  margin:  5%;
   background: #112031;
+
 }
 @media (max-width:920px) {
   .menu-container {
@@ -103,6 +107,7 @@ video{
     flex-direction: column;
     align-items: flex-start;
     margin-left: 0;
+    height: auto;
 }
 .toggle-button {
     display: flex;
@@ -128,12 +133,9 @@ video{
   margin-bottom: 2%;
 }
 .searchnav input[type=text] {
-  margin-right: 5%;
-  margin-top: 2%;
-  margin-bottom: 2%;
+  margin: 0 auto;
 }
 .searchnav input[type=button] {
-  margin-left: 5%;
-  margin-bottom: 2%;
+  margin: 0 auto;
 }
 }
