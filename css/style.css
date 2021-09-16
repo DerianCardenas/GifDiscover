@@ -96,10 +96,25 @@ body{
 video{
   border-radius: 15px;
   margin: 2%;
-  background: #112031;
-
+  max-width: 300px;
+  max-height: 300px;
 }
-@media (max-width:920px) {
+footer{
+  background-color: #112031;
+}
+.down-p{
+  align-items: center;
+  justify-items: center;
+  display: flex;
+  height: 50px;
+}
+.down-p img{
+  position: relative;
+  height: 1.5rem;
+  width: 2.5rem;
+  margin: 0 auto;
+}
+@media (max-width:620px) {
   .menu-container {
     width: 100%;
     flex-direction: column;
