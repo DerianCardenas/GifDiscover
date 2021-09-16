@@ -84,12 +84,10 @@ body{
   border-right: 5%;
 }
 .gif{
-  opacity: inherit;
   align-items: center;
   justify-content: center;
   display: block;
-  margin:  5%;
-  background-color: black;
+  margin: 5%;
   width: 90%;
 }
 .gifrand{
@@ -97,7 +95,7 @@ body{
 }
 video{
   border-radius: 15px;
-  margin:  5%;
+  margin: 2%;
   background: #112031;
 
 }
