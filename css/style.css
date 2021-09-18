@@ -5,7 +5,7 @@
   font: oblique 100% cursive;
 }
 body{
-  background-color: #D4ECDD;
+  background-color: wheat;
   font-size: 18px;
   font-family: 'Vollkorn', serif;
   color: white;
@@ -16,23 +16,27 @@ body{
   font-size: 1.5rem;
   margin-left: 5rem;
 }
+.title a{
+  text-decoration: none;
+  color: white;
+}
 .menu-container{
   background: #345B63;
   display: flex;
   position: relative;
   width: 100%;
-  height: 60px;
+  height: auto;
   align-items: center;
   justify-content: space-between;
   color: white;
 }
 .menu-items ul{
-  margin: 0;
   padding: 0;
   display: flex;
 }
 .menu-items li {
   list-style: none;
+  margin: 2%;
 }
 .menu-items li a{
   text-decoration: none;
@@ -44,8 +48,8 @@ body{
 .menu-items li a:hover{
   padding: 1rem;
   display: block;
-  color: #152D35;
-  background-color: wheat;
+  color: wheat;
+  background-color: #152D35;
   border-radius: 10%;
 }
 .toggle-button {
@@ -75,13 +79,14 @@ body{
   border-radius: 10px;
   font-size: 17px;
   border-right: 2%;
+  width: 70%;
 }
 .searchnav input[type=button] {
   float: right;
   padding: 6px;
   border-radius: 10px;
   font-size: 17px;
-  border-right: 5%;
+  margin-right: 5%;
 }
 .gif{
   align-items: center;
@@ -100,7 +105,7 @@ video{
   max-height: 300px;
 }
 footer{
-  background-color: #112031;
+  background-color: #345B63;
 }
 .down-p{
   align-items: center;
