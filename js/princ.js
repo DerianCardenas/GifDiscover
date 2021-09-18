@@ -64,6 +64,9 @@ const main = () =>{
                 video.src=videoUrl;
                 video.height=height;
                 video.width=width;
+                video.autoplay=true;
+                video.loop=true;
+                video.play();
                 cont.appendChild(video);
             }
      }
@@ -79,7 +82,8 @@ const main = () =>{
                     video.height=height;
                     video.width=width;
                     video.autoplay=true;
-                    video.load();
+                    video.loop=true;
+                    video.play();
                     cont.appendChild(video);
                 }
             }
