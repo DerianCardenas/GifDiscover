@@ -92,9 +92,14 @@ body{
   align-items: center;
   justify-content: center;
   display: block;
+  position: relative;
   margin: 5%;
   width: 90%;
 }
+.gif video{
+    align-self: center;
+    justify-self: center;
+  }
 .gifrand{
   margin: 5% 30%;
 }
@@ -163,4 +168,17 @@ footer{
 .searchnav input[type=button] {
   margin: 0 auto;
   }
+.gif{
+  align-items: center;
+  justify-content: center;
+  display: grid;
+  position: relative;
+  margin: 15%;
+  grid-template-columns: 1fr;
+  width: 70%;
   }
+  .gif video{
+    align-self: center;
+    justify-self: center;
+  }
+}
