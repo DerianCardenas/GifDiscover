@@ -5,7 +5,7 @@
   font: oblique 100% cursive;
 }
 body{
-  background-color: wheat;
+  background-color: #152D35;
   font-size: 18px;
   font-family: 'Vollkorn', serif;
   color: white;
@@ -120,47 +120,47 @@ footer{
   margin: 0 auto;
 }
 @media (max-width:620px) {
-  .menu-container {
+.menu-container {
     width: 100%;
     flex-direction: column;
     align-items: flex-start;
     margin-left: 0;
     height: auto;
-}
+    }
 .toggle-button {
     display: flex;
-}
+  }
 .menu-items {
     display: none;
     width: 100%;
-}
+  }
 .menu-items ul {
     width: 100%;
     flex-direction: column;
-}
+  }
 .menu-items ul li {
     text-align: center;
-}
+  }
 .menu-items ul li a {
     padding: .5rem 1rem;
-}
+  }
 .menu-items li a:hover{
   padding: 1rem;
   display: block;
   color: wheat;
   background-color: #152D35;
   border-radius: 0%;
-}
+  }
 .menu-items.active {
     display: flex;
-}
+  }
 .menu-items .searchnav{
   margin-bottom: 2%;
-}
+  }
 .searchnav input[type=text] {
   margin: 0 auto;
-}
+  }
 .searchnav input[type=button] {
   margin: 0 auto;
-}
-}
+  }
+  }
