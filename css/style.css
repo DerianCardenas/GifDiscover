@@ -125,6 +125,9 @@ footer{
   margin: 0 auto;
 }
 @media (max-width:620px) {
+  .title{
+    font-size: 2rem;
+  }
 .menu-container {
     width: 100%;
     flex-direction: column;
